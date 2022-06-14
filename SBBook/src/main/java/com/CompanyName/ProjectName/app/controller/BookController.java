@@ -44,9 +44,9 @@ public class BookController {
 		return new ResponseEntity<String>(bsi.update(b,bookId),HttpStatus.OK);
 	}
 	@DeleteMapping("/book/{bookId}")
-	public ResponseEntity<String> delete(@ModelAttribute Book b){
+	public ResponseEntity<String> delete(@PathVariable Integer bookId){
 		
-		return new ResponseEntity<String>(bsi.delete(b),HttpStatus.OK);
+		return new ResponseEntity<String>(bsi.delete(bookId),HttpStatus.OK);
 	}
 	
 	@GetMapping("/book/{bookId}")

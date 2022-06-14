@@ -55,8 +55,8 @@ public class BookServiceImpl implements BookServicei {
 
 
 	@Override
-	public String delete(Book b) {
-		br.delete(b);
+	public String delete(Integer bookId) {
+		br.deleteById(bookId);
 		return "delete data";
 	}
 }
