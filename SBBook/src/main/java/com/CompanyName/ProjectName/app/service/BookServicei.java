@@ -12,7 +12,7 @@ public Iterable<Book> getdata();
 
 String update(Book b, Integer bookId);
 
-public String delete(Book b);
+public String delete(Integer bookId);
 
 
 
